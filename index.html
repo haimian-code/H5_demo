@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Match Sort Playable</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="stage" aria-label="playable game ad">
+      <section class="phone" id="game">
+        <div class="hud">
+          <div class="level">Level 15</div>
+          <div class="timer">
+            <span class="dot"></span>
+            <span id="time">01:37</span>
+          </div>
+          <button class="pause" aria-label="pause">II</button>
+        </div>
+
+        <div class="targets" id="targets" aria-label="targets"></div>
+        <div class="pile" id="pile" aria-label="item pile"></div>
+        <div class="hint" id="hint">Drag matching items into the slots</div>
+
+        <div class="tray-wrap">
+          <div class="magic-wheel" id="energyWheel" aria-label="energy wheel">
+            <div class="energy-ring" id="energyRing"></div>
+            <div class="wheel-core"></div>
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="slots" id="slots" aria-label="matching slots"></div>
+        </div>
+
+        <div class="toast" id="toast" aria-live="polite"></div>
+
+        <div class="finish" id="finish" aria-hidden="true">
+          <div class="finish-panel">
+            <div class="badge">Great!</div>
+            <h1>Level Clear</h1>
+            <p>Keep sorting and matching</p>
+            <button id="cta">Play Now</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./game.js"></script>
+  </body>
+</html>
